@@ -1,0 +1,63 @@
+body, section{
+background-position: center;
+background-image: url("./src/scarybackground.png");
+background-repeat: no-repeat;
+background-size: cover;
+color: #ffffff;
+font-size: large;
+font-family: "Indie Flower";
+}
+section{
+    background-image: url("./src/facefullbackground.png");
+    width: 90%;
+    margin: 5%;
+}
+header{ 
+    div{
+        background-image: url("./src/fiapRibon.jpg");
+        img{
+            position: absolute;
+            top: 10%;
+            left: 70%;
+        }
+    }
+}
+a{
+    color: brown;
+    text-decoration: none;
+}
+h1, p, ul{
+    box-sizing: border-box;
+    list-style: none;
+}
+a:hover{color: blueviolet;}
+.column, .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.row{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.outlineStyle{
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: black;
+}
+.padding{padding: 1%;}
+@media screen and (max-width: 500px) {
+    header div img{display: none;}
+    section{
+        margin: 0;
+        width: 100%;
+    }
+    .row{flex-direction: column;}
+}
+@media screen and (max-width: 850px) {
+    header div img{
+    top: 2%;
+    left: 57%;
+  }
+}
